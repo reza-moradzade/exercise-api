@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "extends": "./tsconfig.json",
   "ts-node": {
@@ -7,4 +8,15 @@
   "compilerOptions": {
     "moduleResolution": "node"
   }
+=======
+{
+  "extends": "./tsconfig.json",
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "compilerOptions": {
+    "moduleResolution": "node"
+  }
+>>>>>>> b7b983ef38701f33c5b25c55cac58c43c9fa14ef
 }
