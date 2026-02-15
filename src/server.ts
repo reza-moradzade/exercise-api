@@ -1,6 +1,6 @@
 import { BodyPartController, EquipmentController, ExerciseController, MuscleController } from './modules'
 import { App } from './app'
-import { serve } from '@hono/node-server'  // اضافه کردن این خط
+import { serve } from '@hono/node-server'
 
 const app = new App([
   new ExerciseController(),
@@ -9,13 +9,14 @@ const app = new App([
   new BodyPartController()
 ]).getApp()
 
-const port = 3001;
+// Railway پورت رو از محیط می‌گیره
+const port = process.env.PORT || 3001;
+
 console.log(`🚀 Starting server on port ${port}...`);
 
-// برای Node.js با Hono
 serve({
   fetch: app.fetch,
-  port
+  port: Number(port)
 }, () => {
   console.log(`✅ ExerciseDB API running on http://localhost:${port}`);
 });

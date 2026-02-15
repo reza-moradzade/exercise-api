@@ -32,9 +32,10 @@
     }
   },
   "scripts": {
-    "dev": "tsx src/server.ts",
+     "dev": "tsx src/server.ts",
     "start": "node dist/server.js",
-    "build": "tsc && tsc-alias",
+    "railway-start": "node dist/server.js",
+   "build": "tsc && tsc-alias",
     "format": "prettier --write \"./**/*.{js,ts,json}\"",
     "lint": "eslint .",
     "lint:fix": "bun run lint --fix",
