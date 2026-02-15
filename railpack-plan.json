@@ -1,0 +1,9 @@
+{
+  "build": {
+    "command": "bun install && bun run build",
+    "image": "oven/bun:1.2.2"
+  },
+  "deploy": {
+    "command": "bun run start"
+  }
+}
