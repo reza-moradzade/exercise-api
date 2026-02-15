@@ -32,16 +32,13 @@
     }
   },
   "scripts": {
-<<<<<<< HEAD
-     "dev": "tsx src/server.ts",
-    "start": "node dist/server.js",
-    "railway-start": "node dist/server.js",
-   "build": "tsc && tsc-alias",
-=======
+     "dev": "bun run src/server.ts",
+   "start": "bun run dist/server.js",
+     "railway-start": "bun run dist/server.js",
+    "build": "bun run tsc && bun run tsc-alias",
     "dev": "tsx src/server.ts",
     "start": "node dist/server.js",
     "build": "tsc && tsc-alias",
->>>>>>> b7b983ef38701f33c5b25c55cac58c43c9fa14ef
     "format": "prettier --write \"./**/*.{js,ts,json}\"",
     "lint": "eslint .",
     "lint:fix": "bun run lint --fix",
